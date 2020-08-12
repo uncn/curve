@@ -1,0 +1,3 @@
+include ':Sample'
+include ':Library'
+rootProject.name = "curve"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CurveView">
+        <attr name="curve_height" format="dimension" />
+        <attr name="curve_gravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+        <attr name="curve_orientation" format="enum">
+            <enum name="inner" value="0" />
+            <enum name="outer" value="1" />
+        </attr>
+        <attr name="curve_offsetX" format="dimension" />
+        <attr name="curve_offsetY" format="dimension" />
+        <attr name="curve_src" format="reference" />
+        <attr name="curve_background" format="reference|color" />
+    </declare-styleable>
+
+</resources>
