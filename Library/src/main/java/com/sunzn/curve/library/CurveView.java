@@ -50,9 +50,10 @@ public class CurveView extends View {
         super(context, attrs, defStyleAttr);
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.CurveView);
         mCurveGravity = attributes.getInt(R.styleable.CurveView_curve_gravity, CURVE_GRAVITY_TOP);
-        mCurveHeight = attributes.getDimensionPixelOffset(R.styleable.CurveView_curve_height, CURVE_HEIGHT);
+        mCurveHeight = attributes.getDimensionPixelSize(R.styleable.CurveView_curve_height, CURVE_HEIGHT);
         mCurveOrientation = attributes.getInt(R.styleable.CurveView_curve_orientation, CURVE_ORIENTATION_OUTER);
         mcCurveBackground = attributes.getDrawable(R.styleable.CurveView_curve_background);
+        mCurveHeight = dp2px(mCurveHeight);
         attributes.recycle();
         init();
     }
@@ -143,6 +144,10 @@ public class CurveView extends View {
 
     private float getArcEndY() {
         return mCurveGravity == CURVE_GRAVITY_TOP ? 0 : getHeight();
+    }
+
+    private int dp2px(float dp) {
+        return (int) (dp * getResources().getDisplayMetrics().density + 0.5f);
     }
 
 }
