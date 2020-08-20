@@ -2,6 +2,7 @@ package com.sunzn.curve.library;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -32,6 +33,10 @@ public class CurveView extends View {
 
     public void setCurveHeight(int height) {
         helper.setCurveHeight(height);
+    }
+
+    public void setCurveDrawable(Drawable drawable) {
+        helper.setCurveDrawable(drawable);
     }
 
     public void setCurveGravity(int gravity) {

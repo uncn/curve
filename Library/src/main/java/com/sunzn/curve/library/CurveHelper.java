@@ -69,6 +69,12 @@ public class CurveHelper {
         invalidate();
     }
 
+    public void setCurveDrawable(Drawable drawable) {
+        mcCurveBackground = drawable;
+        math(mW, mH);
+        invalidate();
+    }
+
     public void setCurveGravity(int gravity) {
         mCurveGravity = gravity;
         math(mW, mH);
