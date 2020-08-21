@@ -1,7 +1,7 @@
 # curve
 
 ### ScreenShot
-![sample](https://camo.githubusercontent.com/f562ccbd98c63bd7988adec1b361dc9135883d1b/687474703a2f2f6769746875622e73756e7a6e2e636f6d2f696d6167652f3230323030383231313034393030312e676966)
+![sample](https://github.com/uncn/curve/blob/master/screen/001.gif)
 
 ### License
 ```
