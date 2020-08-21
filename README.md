@@ -1,7 +1,7 @@
 # curve
 
 ### ScreenShot
-![sample](http://github.sunzn.com/image/20200821112313.png)
+![sample](http://github.sunzn.com/image/202008211049001.gif)
 
 ### License
 ```
